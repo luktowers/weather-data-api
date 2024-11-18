@@ -7,7 +7,6 @@ from app.models.weather import WeatherData
 
 logger = logging.getLogger(__name__)
 
-
 class WeatherService:
     def __init__(self):
         self.api_key = settings.OPENWEATHER_API_KEY
@@ -47,7 +46,6 @@ class WeatherService:
             wind_speed=data["wind"]["speed"],
             pressure=data["main"]["pressure"],
         )
-
     async def fetch_onecall_data(
         self,
         lat: float,
