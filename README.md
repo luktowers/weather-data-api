@@ -51,10 +51,10 @@ pyenv activate .venv
 pip install -e .
 ```
 
-2.run localstack
+2 .run localstack
 
 ```shell
-make deploy-local
+docker compose up -d
 ```
 
 3.Access the API documentation:
